@@ -11,6 +11,6 @@ def max_pal(seq):
         while i - cur >= 0 and i + cur < len_seq and seq[i - cur] == seq[i + cur]:
             cur += 1
         pals[i] = cur
-    return [(x - 1) * 2 + 1 for x in pals]
+    return [2 * x - 1 for x in pals]
 
 print(' '.join(map(str, max_pal(input()))))
